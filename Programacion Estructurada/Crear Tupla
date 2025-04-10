@@ -1,0 +1,5 @@
+# Crear una tupla con 5 países
+paises = ('Argentina', 'Brasil', 'Colombia', 'Ecuador', 'Perú')
+
+# Mostrar el tercer elemento (recordar que en Python los índices empiezan en 0)
+print("El tercer país de la tupla es:", paises[2])

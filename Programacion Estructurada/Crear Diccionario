@@ -1,0 +1,9 @@
+# Crear un diccionario con los datos de la persona
+persona = {
+    "nombre": "Ana",
+    "edad": 28,
+    "ciudad": "Barcelona"
+}
+
+# Mostrar la edad accediendo a la clave 'edad'
+print(f"La edad de {persona['nombre']} es: {persona['edad']} años")

@@ -1,0 +1,50 @@
+import math
+
+def calculadora():
+    """Calculadora con operaciones básicas + raíz cuadrada"""
+    while True:
+        print("\n=== Calculadora ===")
+        print("1. Suma")
+        print("2. Resta")
+        print("3. Multiplicación")
+        print("4. División")
+        print("5. Raíz cuadrada")
+        print("6. Salir")
+
+        opcion = input("Seleccione una operación (1-6): ")
+
+        if opcion == "6":
+            print("¡Hasta luego!")
+            break
+
+        try:
+            if opcion in ("1", "2", "3", "4"):
+                num1 = float(input("Ingrese el primer número: "))
+                num2 = float(input("Ingrese el segundo número: "))
+            elif opcion == "5":
+                num = float(input("Ingrese un número: "))
+        except ValueError:
+            print("Error: Ingrese valores numéricos válidos")
+            continue
+
+        if opcion == "1":
+            print(f"Resultado: {num1} + {num2} = {num1 + num2}")
+        elif opcion == "2":
+            print(f"Resultado: {num1} - {num2} = {num1 - num2}")
+        elif opcion == "3":
+            print(f"Resultado: {num1} × {num2} = {num1 * num2}")
+        elif opcion == "4":
+            if num2 == 0:
+                print("Error: No se puede dividir entre cero")
+            else:
+                print(f"Resultado: {num1} ÷ {num2} = {num1 / num2}")
+        elif opcion == "5":
+            if num < 0:
+                print("Error: No existe raíz de números negativos")
+            else:
+                print(f"√{num} = {math.sqrt(num)}")
+        else:
+            print("Opción no válida")
+
+if __name__ == "__main__":
+    calculadora()
