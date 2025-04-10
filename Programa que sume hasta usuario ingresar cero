@@ -1,0 +1,18 @@
+# Programa para sumar números hasta que el usuario ingrese 0
+
+suma = 0  # Inicializamos la variable suma en 0
+
+while True:
+    try:
+        numero = float(input("Ingresa un número (0 para terminar): "))
+        
+        if numero == 0:
+            break  # Termina el bucle si se ingresa 0
+        
+        suma += numero  # Acumulamos el número en la suma total
+    
+    except ValueError:
+        print("¡Error! Debes ingresar un número válido.")
+
+# Mostramos el resultado final
+print(f"\nLa suma total de los números ingresados es: {suma}")

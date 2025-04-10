@@ -1,0 +1,9 @@
+# Definir dos números complejos
+num1 = complex(3, 4)  # 3 + 4j
+num2 = complex(1, -2) # 1 - 2j
+
+# Sumar los números complejos
+suma = num1 + num2
+
+# Mostrar el resultado
+print(f"La suma de {num1} y {num2} es {suma}")
